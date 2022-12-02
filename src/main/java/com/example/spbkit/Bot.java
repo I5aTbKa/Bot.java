@@ -52,53 +52,45 @@ public class Bot extends TelegramLongPollingBot {
             }
 
 
-
             if (update.getCallbackQuery().getData().equals("kurs1")) {
                 kurs1(perm);
-            }
-            else if(update.getCallbackQuery().getData().equals("next1")){
+            } else if (update.getCallbackQuery().getData().equals("next1")) {
                 kurs1_2(perm);
-            }
-            else if(update.getCallbackQuery().getData().equals("next1_1")){
+            } else if (update.getCallbackQuery().getData().equals("next1_1")) {
                 kurs1_3(perm);
             }
 
             if (update.getCallbackQuery().getData().equals("kurs2")) {
                 kurs2(perm);
-            }
-            else if(update.getCallbackQuery().getData().equals("next2")){
+            } else if (update.getCallbackQuery().getData().equals("next2")) {
                 kurs2_2(perm);
             }
-            if(update.getCallbackQuery().getData().equals("next2_1")){
+            if (update.getCallbackQuery().getData().equals("next2_1")) {
                 kurs2_3(perm);
             }
 
             if (update.getCallbackQuery().getData().equals("kurs3")) {
                 kurs3(perm);
-            }
-            else if(update.getCallbackQuery().getData().equals("next3")){
+            } else if (update.getCallbackQuery().getData().equals("next3")) {
                 kurs3_2(perm);
             }
-            if(update.getCallbackQuery().getData().equals("next3_1")){
+            if (update.getCallbackQuery().getData().equals("next3_1")) {
                 kurs3_3(perm);
             }
 
             if (update.getCallbackQuery().getData().equals("kurs4")) {
                 kurs4(perm);
-            }
-            else if(update.getCallbackQuery().getData().equals("next4")){
+            } else if (update.getCallbackQuery().getData().equals("next4")) {
                 kurs4_2(perm);
             }
 
 
-
             if (update.getCallbackQuery().getData().equals("group121")) {
-                kurs1(perm);
+                day(perm);
             }
 
         }
     }
-
 
 
     private void sendwithoutURL(Message message) {
@@ -165,7 +157,7 @@ public class Bot extends TelegramLongPollingBot {
         }
     }
 
-    public void back(Update update){
+    public void back(Update update) {
         InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
         InlineKeyboardButton button = new InlineKeyboardButton();
         button.setText("Узнать расписание");
@@ -192,6 +184,7 @@ public class Bot extends TelegramLongPollingBot {
             e.printStackTrace();
         }
     }
+
     public void kurs(Update update) {
         InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
         InlineKeyboardButton button1 = new InlineKeyboardButton();
@@ -237,6 +230,7 @@ public class Bot extends TelegramLongPollingBot {
             e.printStackTrace();
         }
     }
+
     public void kurs1(Update update) {
         InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
         InlineKeyboardButton button1 = new InlineKeyboardButton();
@@ -284,7 +278,8 @@ public class Bot extends TelegramLongPollingBot {
         }
 
     }
-    public void kurs1_2(Update update){
+
+    public void kurs1_2(Update update) {
         InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
         InlineKeyboardButton button1 = new InlineKeyboardButton();
         button1.setText("124");
@@ -331,7 +326,8 @@ public class Bot extends TelegramLongPollingBot {
         }
 
     }
-    public void kurs1_3(Update update){
+
+    public void kurs1_3(Update update) {
         InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
         InlineKeyboardButton button1 = new InlineKeyboardButton();
         button1.setText("127");
@@ -374,6 +370,7 @@ public class Bot extends TelegramLongPollingBot {
         }
 
     }
+
     public void kurs2(Update update) {
         InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
         InlineKeyboardButton button1 = new InlineKeyboardButton();
@@ -421,7 +418,8 @@ public class Bot extends TelegramLongPollingBot {
         }
 
     }
-    public void kurs2_2(Update update){
+
+    public void kurs2_2(Update update) {
         InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
         InlineKeyboardButton button1 = new InlineKeyboardButton();
         button1.setText("214");
@@ -468,7 +466,8 @@ public class Bot extends TelegramLongPollingBot {
         }
 
     }
-    public void kurs2_3(Update update){
+
+    public void kurs2_3(Update update) {
         InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
         InlineKeyboardButton button1 = new InlineKeyboardButton();
         button1.setText("11");
@@ -482,7 +481,6 @@ public class Bot extends TelegramLongPollingBot {
         InlineKeyboardButton back = new InlineKeyboardButton();
         back.setText("Назад");
         back.setCallbackData("back");
-
 
 
         List<InlineKeyboardButton> keyboardButtonsRow = new ArrayList<>();
@@ -509,6 +507,7 @@ public class Bot extends TelegramLongPollingBot {
         }
 
     }
+
     public void kurs3(Update update) {
         InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
         InlineKeyboardButton button1 = new InlineKeyboardButton();
@@ -556,6 +555,7 @@ public class Bot extends TelegramLongPollingBot {
         }
 
     }
+
     public void kurs3_2(Update update) {
         InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
         InlineKeyboardButton button1 = new InlineKeyboardButton();
@@ -603,6 +603,7 @@ public class Bot extends TelegramLongPollingBot {
         }
 
     }
+
     public void kurs3_3(Update update) {
         InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
         InlineKeyboardButton button1 = new InlineKeyboardButton();
@@ -643,6 +644,7 @@ public class Bot extends TelegramLongPollingBot {
         }
 
     }
+
     public void kurs4(Update update) {
         InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
         InlineKeyboardButton button1 = new InlineKeyboardButton();
@@ -690,6 +692,7 @@ public class Bot extends TelegramLongPollingBot {
         }
 
     }
+
     public void kurs4_2(Update update) {
         InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
         InlineKeyboardButton button1 = new InlineKeyboardButton();
@@ -735,6 +738,54 @@ public class Bot extends TelegramLongPollingBot {
 
     }
 
+    public void day(Update update) {
+        InlineKeyboardMarkup keyboard = new InlineKeyboardMarkup();
+        InlineKeyboardButton button1 = new InlineKeyboardButton();
+        button1.setText("Понедельник");
+        button1.setCallbackData("Monday");
+
+        InlineKeyboardButton button2 = new InlineKeyboardButton();
+        button2.setText("Вторник");
+        button2.setCallbackData("Thuesday");
+
+        InlineKeyboardButton button3 = new InlineKeyboardButton();
+        button3.setText("Среда");
+        button3.setCallbackData("Wednesday");
+
+        InlineKeyboardButton back = new InlineKeyboardButton();
+        back.setText("Назад");
+        back.setCallbackData("back");
+
+        InlineKeyboardButton next = new InlineKeyboardButton();
+        back.setText("Вперёд");
+        back.setCallbackData("next_day");
+
+
+        List<InlineKeyboardButton> keyboardButtonsRow = new ArrayList<>();
+        keyboardButtonsRow.add(back);
+        keyboardButtonsRow.add(button1);
+        keyboardButtonsRow.add(button2);
+        keyboardButtonsRow.add(button3);
+        keyboardButtonsRow.add(next);
+
+        List<List<InlineKeyboardButton>> rowlist = new ArrayList<>();
+        rowlist.add(keyboardButtonsRow);
+        keyboard.setKeyboard(rowlist);
+        try {
+            execute(
+                    SendMessage
+                            .builder()
+                            .chatId(String.valueOf(update.getCallbackQuery().getMessage().getChatId()))
+                            .parseMode("Markdown")
+                            .text("Выберите день:")
+                            .replyMarkup(keyboard)
+                            .build());
+
+        } catch (TelegramApiException e) {
+            e.printStackTrace();
+        }
+
+    }
 }
 
 
